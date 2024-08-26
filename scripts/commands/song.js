@@ -84,7 +84,7 @@ handleReply: async function ({ api, event, handleReply }) {
         if (fs.statSync(path).size > 26214400) return api.sendMessage('The file cannot be sent because the capacity is greater than 25MB.', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-    body: `🎵 𝐓𝐈𝐓𝐋𝐄: ${data.title}\n🎶 𝐍𝐀𝐌𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 : ${data.author}\n⏱️ 𝐓𝐈𝐌𝐄: ${this.convertHMS(data.dur)}\n👀 𝐕𝐈𝐄𝐖𝐒: ${data.viewCount}\n🥰 𝐋𝐈𝐊𝐄𝐒: ${data.likes}\n⏱️𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆 𝐓𝐈𝐌𝐄: ${Math.floor((Date.now()- data.timestart)/1000)} 𝐒𝐄𝐂𝐎𝐍𝐃\n💿====𝐅𝐀𝐑𝐇𝐀𝐍-𝐈𝐒𝐋𝐀𝐌====💿`,
+    body: `🎵 𝐓𝐈𝐓𝐋𝐄: ${data.title}\n🎶 𝐍𝐀𝐌𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 : ${data.author}\n⏱️ 𝐓𝐈𝐌𝐄: ${this.convertHMS(data.dur)}\n👀 𝐕𝐈𝐄𝐖𝐒: ${data.viewCount}\n🥰 𝐋𝐈𝐊𝐄𝐒: ${data.likes}\n⏱️𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆 𝐓𝐈𝐌𝐄: ${Math.floor((Date.now()- data.timestart)/1000)} 𝐒𝐄𝐂𝐎𝐍𝐃\n💿===𝐊𝐈𝐍𝐆-𝐒𝐇𝐎𝐔𝐑𝐎𝐕===💿`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
 
@@ -104,7 +104,7 @@ convertHMS: function(value) {
 },
 
   start: async function ({ nayan, events, args }) {
-    if (args.length == 0 || !args) return nayan.reply('»আপনি যে গানটি শুনতে চান তার একটি লাইন লিখুন 💝 এই বার empty!😓\n আবার নতুন করে কমান্ড দেন [ 𝐅𝐀𝐑𝐇𝐀𝐍-𝐈𝐒𝐋𝐀𝐌 ]', events.threadID, events.messageID);
+    if (args.length == 0 || !args) return nayan.reply('»আপনি যে গানটি শুনতে চান তার একটি লাইন লিখুন 💝 এই বার empty!😓\n আবার নতুন করে কমান্ড দেন [ 𝐊𝐈𝐍𝐆-𝐒𝐇𝐎𝐔𝐑𝐎𝐕 ]', events.threadID, events.messageID);
     const keywordSearch = args.join(" ");
     var path = `${__dirname}/cache/1.mp3`
     if (fs.existsSync(path)) { 
@@ -115,7 +115,7 @@ convertHMS: function(value) {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
             if (fs.statSync(path).size > 26214400) return nayan.reply('Unable to send files because the capacity is greater than 25MB .', events.threadID, () => fs.unlinkSync(path), events.messageID);
             return nayan.reply({ 
-                body: `🎵 𝐓𝐈𝐓𝐋𝐄: ${data.title}\n🎶 𝐍𝐀𝐌𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋: ${data.author}\n⏱️ 𝐓𝐈𝐌𝐄: ${this.convertHMS(data.dur)}\n👀 𝐕𝐈𝐄𝐖𝐒: ${data.viewCount}\n👍 𝐋𝐈𝐊𝐄𝐒: ${data.likes}\n⏱️ 𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆 𝐓𝐈𝐌𝐄: ${Math.floor((Date.now()- data.timestart)/1000)} 𝐒𝐄𝐂𝐎𝐍𝐃\n💿====𝐅𝐀𝐑𝐇𝐀𝐍-𝐈𝐒𝐋𝐀𝐌====💿`,
+                body: `🎵 𝐓𝐈𝐓𝐋𝐄: ${data.title}\n🎶 𝐍𝐀𝐌𝐄 𝐂𝐇𝐀𝐍𝐍𝐄𝐋: ${data.author}\n⏱️ 𝐓𝐈𝐌𝐄: ${this.convertHMS(data.dur)}\n👀 𝐕𝐈𝐄𝐖𝐒: ${data.viewCount}\n👍 𝐋𝐈𝐊𝐄𝐒: ${data.likes}\n⏱️ 𝐏𝐑𝐎𝐂𝐄𝐒𝐒𝐈𝐍𝐆 𝐓𝐈𝐌𝐄: ${Math.floor((Date.now()- data.timestart)/1000)} 𝐒𝐄𝐂𝐎𝐍𝐃\n💿====𝐊𝐈𝐍𝐆-𝐒𝐇𝐎𝐔𝐑𝐎𝐕====💿`,
                 attachment: fs.createReadStream(path)}, events.threadID, ()=> fs.unlinkSync(path), 
             events.messageID)
 
