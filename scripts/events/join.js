@@ -64,11 +64,11 @@ APPROVAL ALLOW IN THIS GROUP!!!
 <------------------------------>
 AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
 
-DEVELOPER : FARHAN ISLAM 
+DEVELOPER : 𝐊𝐈𝐍𝐆 𝐒𝐇𝐎𝐔𝐑𝐎𝐕
 
 🟣Facebook Account Link: 
 
-https://www.facebook.com/broken.shourov.ss
+https://www.facebook.com/profile.php?id=100070297030133&mibextid=ZbWKwL
 
 🔵WHATSAPP NUMBER: 01709281334`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
@@ -159,7 +159,27 @@ https://www.facebook.com/broken.shourov.ss
         abx.push(fs.createReadStream(__dirname + `/Nayan/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = `Hello {name}\nWelcome to {threadName}\nyou're the {soThanhVien}th member on this group please enjoy"\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `‎╔════•|      ✿      |•════╗
+ 💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐
+╚════•|      ✿      |•════╝
+
+    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨
+
+                 ❥𝐍𝐄𝐖~
+
+        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~ {name}\༄✺আ্ঁপ্ঁনা্ঁকে্ঁ আ্ঁমা্ঁদে্ঁর্ঁ✺࿐ {threadName}🥰🖤🌸—এ্ঁর্ঁ প্ঁক্ষ্ঁ🍀থে্ঁকে্ঁ🍀—🌸🥀
+
+         🥀_ভা্ঁলো্ঁবা্ঁসা্ঁ_অ্ঁভি্ঁরা্ঁম্ঁ_🥀
+         
+ \༄✺আঁপঁনিঁ এঁইঁ গ্রুঁপেঁর {soThanhVien} নঁং মে্ঁম্বা্ঁরঁ ࿐
+
+    ╔╦══•    •✠•❀•✠ •   •══╦╗
+        ♥    𝐂𝐄𝐎    ♥
+
+                           ☟                     
+
+      ♥𝐊𝐈𝐍𝐆 𝐒𝐇𝐎𝐔𝐑𝐎𝐕(✷‿✷)♥
+    ╚╩══•" "\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
@@ -180,4 +200,4 @@ https://www.facebook.com/broken.shourov.ss
       }
     } catch (e) { return console.log(e) };
   }
-}
+                                                                                                           }
