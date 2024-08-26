@@ -92,7 +92,7 @@ module.exports = {
       file.on('finish', () => {
         setTimeout(function () {
           return nayan.reply({
-            body: `❐ THIS IS YOUR NAME EDIT ✌️\n\n___________________________________\n\n❐ This Bot Name : ${global.config.BOTNAME} 🤖\n❐ This Bot Owner : FARHAN_ISLAM\n❐ Your Input Name : ${name}\n\n___________________________________`,
+            body: `❐ THIS IS YOUR NAME EDIT ✌️\n\n___________________________________\n\n❐ This Bot Name : ${global.config.BOTNAME} 🤖\n❐ This Bot Owner : 𝐊𝐈𝐍𝐆-𝐒𝐇𝐎𝐔𝐑𝐎𝐕\n❐ Your Input Name : ${name}\n\n___________________________________`,
             attachment: fs.createReadStream(__dirname + '/cache/ephoto.jpg')
           }, threadID, messageID)
         }, 5000)
